@@ -10,7 +10,7 @@ entrada = input("Digite a operação matematica: ")
 entradaSplit = re.findall('[\d]*[.][\d]+|[\d]+|\+|\-|\*|\/|\^',entrada)      #retira todos os numeros e sinais matematicos e apenda, em ordem, na lista 'entradaSplit'
 
 start_time = time.time() # Starta o cronometro de execução logo após o input do usuario
-
+print(entradaSplit)
 counter=0 # Variavel para gerir as posições do index da lista para as operações de substituição e pop() de valores
 
 while (len(entradaSplit) > 1):  #Se tiver mais de um valor dentro da lista, vai continuar rodando até que sobre apenas 1 termo (1 valor = solução encontrada)
