@@ -39,12 +39,6 @@ while (len(entradaSplit) > 1):  #Se tiver mais de um valor dentro da lista, vai 
         entradaSplit.pop(counter-2)
         print(entradaSplit)
         counter=counter-2
-    if entradaSplit[counter] == '^':
-        entradaSplit[counter-1] = float(entradaSplit[counter-2])  ** float(entradaSplit[counter-1])
-        entradaSplit.pop(counter)
-        entradaSplit.pop(counter-2)
-        print(entradaSplit)
-        counter=counter-2
 
     counter=counter+1
 
